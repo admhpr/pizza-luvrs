@@ -1,6 +1,6 @@
-const toppingStore = require('../data/toppings')
+const toppingStore = require("../data/toppings");
 
 module.exports = () => {
-  const toppings = toppingStore.getAll()
-  return toppings
-}
+  const toppings = toppingStore.getAll();
+  return toppings;
+};

@@ -1,10 +1,10 @@
 module.exports = handlers => ({
-  method: 'GET',
-  path: '/',
+  method: "GET",
+  path: "/",
   handler: handlers.main,
   options: {
     auth: {
-      mode: 'try'
+      mode: "try"
     }
   }
-})
+});

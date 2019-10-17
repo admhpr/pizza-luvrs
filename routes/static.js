@@ -1,12 +1,12 @@
 module.exports = handlers => ({
-  method: 'GET',
-  path: '/assets/{param*}',
+  method: "GET",
+  path: "/assets/{param*}",
   handler: {
     directory: {
-      path: 'assets'
+      path: "assets"
     }
   },
   options: {
     auth: false
   }
-})
+});

@@ -1,3 +1,3 @@
 module.exports = (req, h) => {
-  return h.view('register')
-}
+  return h.view("register");
+};

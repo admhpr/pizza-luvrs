@@ -1,5 +1,5 @@
 module.exports = handlers => ({
-  method: 'POST',
-  path: '/pizza',
+  method: "POST",
+  path: "/pizza",
   handler: handlers.pizza
-})
+});

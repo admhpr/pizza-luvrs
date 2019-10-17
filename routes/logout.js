@@ -1,5 +1,5 @@
 module.exports = handlers => ({
-  method: 'GET',
-  path: '/logout',
+  method: "GET",
+  path: "/logout",
   handler: handlers.logout
-})
+});
