@@ -5,7 +5,8 @@
   "repository": "https://github.com/ryanmurakami/pizza-luvrs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "format": "npx prettier --write **.js **/*.js"
   },
   "author": "Ryan Lewis <ryanharrisonlewis@gmail.com>",
   "license": "MIT",
