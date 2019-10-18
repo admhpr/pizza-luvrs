@@ -1,15 +1,15 @@
-require("dotenv").config();
-const Sequelize = require("sequelize");
+require("dotenv").config()
+const Sequelize = require("sequelize")
 
-const database = process.env.DB_DATABASE;
-const host = process.env.DB_HOST;
-const username = process.env.DB_USERNAME;
-const password = process.env.DB_PASSWORD;
+const database = process.env.DB_DATABASE
+const host = process.env.DB_HOST
+const username = process.env.DB_USERNAME
+const password = process.env.DB_PASSWORD
 
 const dbClient = new Sequelize(database, username, password, {
   host,
   dialect: "postgres"
-});
+})
 
 const Pizza = dbClient.define("pizza", {
   id: {
@@ -27,5 +27,14 @@ const Pizza = dbClient.define("pizza", {
   },
   username: {
     type: Sequelize.STRING
+  },
+  created: {
+    type: Sequelize.BIGINT
   }
-});
+})
+
+Pizza.sync().then(() => {
+  console.log("postgres connection ready")
+})
+
+module.exports = Pizza
